@@ -1,4 +1,4 @@
-package json
+package rf
 
 import (
 	"encoding/json"

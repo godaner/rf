@@ -1,6 +1,6 @@
-package _map
+package rf
 
-func Value[R any](m map[string]any, key string) (r R) {
+func GetMapValue[R any](m map[string]any, key string) (r R) {
 	if len(m) == 0 {
 		return r
 	}

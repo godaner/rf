@@ -1,8 +1,8 @@
-package _if
+package rf
 
 import "log"
 
-func ErrThenExit(err error, v ...any) {
+func IfErrThenExit(err error, v ...any) {
 	if err != nil {
 		if len(v) == 0 {
 			log.Fatalln(err)
@@ -12,7 +12,7 @@ func ErrThenExit(err error, v ...any) {
 	}
 }
 
-func TrueThenExit(b bool, v ...interface{}) {
+func IfTrueThenExit(b bool, v ...interface{}) {
 	if b {
 		log.Fatalln(v...)
 	}
